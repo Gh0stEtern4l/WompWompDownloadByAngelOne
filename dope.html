@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womp Download</title>
+    <style>
+        @font-face {
+            font-family: 'Dope';
+            src: url(fonts/minecraft.otf);
+        }
+
+        body {
+            background-image: url('https://cdn.discordapp.com/attachments/1201284930097922188/1249536498903158844/image.png?ex=6667a90c&is=6666578c&hm=e61d94b5b3263a0e15635d3da7f3bafc7bfc78874cfe2c4e4c834cd4f93640f5&'); /* Replace 'your_image_url_here' with the actual URL of your image */
+            background-size: 1500px;
+            backdrop-filter: blur(2px); /* Adjust the blur amount as needed */
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: 'Dope';
+            padding: 30px;
+            margin: 0; /* Remove default body margin */
+            height: 100vh; /* Set body height to 100% of viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content horizontally and vertically */
+            align-items: center;
+            transition: background-size 0.3s ease-in-out; /* Add a smooth transition for the zoom effect */
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        @font-face {
+            font-family: Mine;
+            src: url();
+        }
+
+        #myText {
+            font-size: 70px;
+            cursor: pointer;
+            margin-top: 20px;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        #myText span {
+            color: rgb(0, 102, 255);
+            text-shadow: 0 0 30px rgb(5, 163, 255), 0, 0; /* Red glow around the text */
+            transition: color 1s, text-shadow 0.3s;
+        }
+
+        #myText2 {
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        #modulelist {
+            font-size: 30;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        #modulelist span {
+            color: rgb(0, 38, 255);
+            text-shadow: 0 0 30px rgb(38, 0, 255), 0, 0; /* Red glow around the text */
+            transition: color 1s, text-shadow 0.3s;
+        }
+
+        #modulelist:hover span {
+            color: blue;
+            text-shadow: 0 0 50px blue; /* Change the glow color on hover */
+            transition: color 0.5s, text-shadow 0.3s;
+        }
+
+        #myText2 span {
+            color: rgb(4, 0, 255);
+            text-shadow: 0 0 30px rgb(4, 0, 255), 0, 0; /* Red glow around the text */
+            transition: color 1s, text-shadow 0.3s;
+        }
+
+        #myText2:hover span {
+            color: rgb(225, 0, 255);
+            text-shadow: 0 0 50px rgb(225, 0, 255); /* Change the glow color on hover */
+            transition: color 0.5s, text-shadow 0.3s;
+        }
+
+        #myText:hover span {
+            color: rgb(255, 0, 212);
+            text-shadow: 0 0 50px rgb(204, 0, 255); /* Change the glow color on hover */
+            transition: color 0.5s, text-shadow 0.3s;
+        }
+
+        #myButton {
+            background-color: black;
+            color: rgb(255, 0, 212);
+            border: 2px solid rgb(255, 0, 242);
+            padding: 10px 50px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: Dope;
+            outline: none;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgb(240, 1, 220);
+            margin-top: 20px;
+        }
+
+        #myButton:hover {
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0 0 20px rgb(0, 217, 255);
+            font-family: Dope;
+            border: 2px solid rgb(0, 204, 255);
+            color: rgb(0, 217, 255);
+        }
+
+        #description {
+            color: rgb(0, 255, 242);
+            text-shadow: 0 0 10px rgb(0, 38, 255); /* Red glow around the text */
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        #myImage {
+            width: 300px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: 20px;
+            border: 2px solid rgb(4, 0, 255); /* Red border around the image */
+            box-shadow: 0 0 10px rgb(0, 81, 255); /* Red glow around the image */
+        }
+
+    </style>
+<body>
+    <div id="container">
+        <p id="myText" onclick="location.href='....';">
+            <span>-</span>
+            <span>W</span>
+            <span>o</span>
+            <span>m</span>
+            <span>p</span>
+            <span>W</span>
+            <span>o</span>
+            <span>m</span>
+            <span>p</span>
+            <span> </span>
+            <span>-|-</span>
+            <span>C</span>
+            <span>l</span>
+            <span>i</span>
+            <span>e</span>
+            <span>n</span>
+            <span>t</span>
+            <span>-</span>
+        </p>
+        <button id="myButton" onclick="FontFace('minecraft'); location.href='https://cdn.discordapp.com/attachments/1249093656980361280/1249538413946863699/WompWompInjector.zip?ex=6667aad5&is=66665955&hm=897084165ccb5edac704604dfcfeb23bf9f51dc611d46a668604ca50d745580f&';">Download WompWomp</button>
+        <div id="description">welcome to WompWomp's Download page! (!!! INVITE ONLY !!!)</div>
+        <div id="description">Devs: Website - Angel \ ClientMain - Angel \ ClientHelpers - Alana</div>
+        <div id="description">Why WompWomp? - because one: the autocrystal has a fast speed, the clickgui is easy, simple and fast to learn | Sorry For the stupid website, but its all i have at the moment</div>
+        <a href="" alt="Displayed Image"></a>
+    </div>
+    <script>
+        const myText = document.getElementById('myText');
+        const letters = myText.getElementsByTagName('span');
+
+        function playSound(soundUrl) {
+            const audio = new Audio(soundUrl);
+            audio.play();
+        }
+
+        function colorChange(index) {
+            setTimeout(() => {
+                letters[index].style.color = 'purple';
+                letters[index].style.textShadow = '0 0 20px red'; // Change glow color
+                letters[index].style.webkitTextStroke = '0 0 10px black'
+            }, index * 100);
+
+            setTimeout(() => {
+                letters[index].style.color = '#0037ff';
+                letters[index].style.textShadow = '0 0 20px cyan'; // Reset glow color
+            }, (index + letters.length) * 100);
+            
+        }
+
+        function loopAnimation() {
+            for (let i = 0; i < letters.length; i++) {
+                colorChange(i);
+            }
+            setTimeout(loopAnimation, letters.length * 200); // Total time for one loop
+        }
+
+        loopAnimation();
+
+        const body = document.body;
+
+        body.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX / window.innerWidth - 0.5;
+            const mouseY = e.clientY / window.innerHeight - 0.5;
+
+            body.style.backgroundPosition = `${mouseX * 100}px ${mouseY * 100}px`;
+
+        });
+
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        backgroundMusic.play();
+
+        function showNotification() {
+            const notification = document.createElement('div');
+            notification.classList.add('notification');
+            notification.textContent = 'Welcome My Bio!';
+
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.remove();
+            }, 5000); // Remove the notification after 5 seconds
+        }
+
+        showNotification();
+    </script>
+
+
+</body></html>
