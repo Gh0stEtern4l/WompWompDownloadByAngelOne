@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Womp Download</title>
@@ -29,69 +31,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-        
-        @font-face {
-            font-family: Mine;
-            src: url();
-        }
-
-        #myText {
-            font-size: 70px;
-            cursor: pointer;
-            margin-top: 20px;
-            overflow: hidden;
-            display: inline-block;
-        }
-
-        #myText span {
-            color: rgb(0, 102, 255);
-            text-shadow: 0 0 30px rgb(5, 163, 255), 0, 0; /* Red glow around the text */
-            transition: color 1s, text-shadow 0.3s;
-        }
-
-        #myText2 {
-            font-size: 20px;
-            cursor: pointer;
-            margin-top: 20px;
-            overflow: hidden;
-            display: inline-block;
-        }
-
-        #modulelist {
-            font-size: 30;
-            overflow: hidden;
-            display: inline-block;
-        }
-
-        #modulelist span {
-            color: rgb(0, 38, 255);
-            text-shadow: 0 0 30px rgb(38, 0, 255), 0, 0; /* Red glow around the text */
-            transition: color 1s, text-shadow 0.3s;
-        }
-
-        #modulelist:hover span {
-            color: blue;
-            text-shadow: 0 0 50px blue; /* Change the glow color on hover */
-            transition: color 0.5s, text-shadow 0.3s;
-        }
-
-        #myText2 span {
-            color: rgb(4, 0, 255);
-            text-shadow: 0 0 30px rgb(4, 0, 255), 0, 0; /* Red glow around the text */
-            transition: color 1s, text-shadow 0.3s;
-        }
-
-        #myText2:hover span {
-            color: rgb(225, 0, 255);
-            text-shadow: 0 0 50px rgb(225, 0, 255); /* Change the glow color on hover */
-            transition: color 0.5s, text-shadow 0.3s;
-        }
-
-        #myText:hover span {
-            color: rgb(255, 0, 212);
-            text-shadow: 0 0 50px rgb(204, 0, 255); /* Change the glow color on hover */
-            transition: color 0.5s, text-shadow 0.3s;
         }
 
         #myButton {
@@ -132,93 +71,25 @@
         }
 
     </style>
+</head>
 <body>
     <div id="container">
-        <p id="myText" onclick="location.href='....';">
-            <span>-</span>
-            <span>W</span>
-            <span>o</span>
-            <span>m</span>
-            <span>p</span>
-            <span>W</span>
-            <span>o</span>
-            <span>m</span>
-            <span>p</span>
-            <span> </span>
-            <span>-|-</span>
-            <span>C</span>
-            <span>l</span>
-            <span>i</span>
-            <span>e</span>
-            <span>n</span>
-            <span>t</span>
-            <span>-</span>
-        </p>
-        <button id="myButton" onclick="playSound('https://cdn.discordapp.com/attachments/1249093656980361280/1250528378843561994/WompWompLauncher.exe?ex=666b44cf&is=6669f34f&hm=e1c9b7ccaedc030f8aef096c4a6dee330115258a71c791664186713a9503e861&'); location.href='https://cdn.discordapp.com/attachments/1249093656980361280/1250528378843561994/WompWompLauncher.exe?ex=666b44cf&is=6669f34f&hm=e1c9b7ccaedc030f8aef096c4a6dee330115258a71c791664186713a9503e861&';"">Downlaod Injector</button>
-        <div id="description">welcome to WompWomp's Download page! (!!! INVITE ONLY !!!)</div>
-        <div id="description">Devs: Website - Angel \ ClientMain - Angel \ ClientHelpers - Alana</div>
-        <div id="description">Why WompWomp? - because: the clickgui is easy, simple and fast to learn | Sorry For the stupid website, but its all i have at the moment</div>
-        <a href="" alt="Displayed Image"></a>
-    </div>
-    <script>
-        const myText = document.getElementById('myText');
-        const letters = myText.getElementsByTagName('span');
+        <!-- Replace animated text with image -->
+        <img id="myImage" src="https://github.com/Gh0stEtern4l/DopeOneModuleFourRandom/blob/main/KinesisBanner.png" alt="Displayed Image">
 
+        <button id="myButton" onclick="playSound('https://cdn.discordapp.com/attachments/1249093656980361280/1250528378843561994/WompWompLauncher.exe?ex=666b44cf&is=6669f34f&hm=e1c9b7ccaedc030f8aef096c4a6dee330115258a71c791664186713a9503e861&'); location.href='https://cdn.discordapp.com/attachments/1249093656980361280/1250528378843561994/WompWompLauncher.exe?ex=666b44cf&is=6669f34f&hm=e1c9b7ccaedc030f8aef096c4a6dee330115258a71c791664186713a9503e861&';">Download Injector</button>
+
+        <div id="description">Welcome to WompWomp's Download page! (INVITE ONLY)</div>
+        <div id="description">Devs: Website - Angel | ClientMain - Angel | ClientHelpers - Alana</div>
+        <div id="description">Why WompWomp? - Because the clickgui is easy, simple, and fast to learn. Sorry for the basic website, it's all I have at the moment.</div>
+    </div>
+
+    <script>
         function playSound(soundUrl) {
             const audio = new Audio(soundUrl);
             audio.play();
         }
-
-        function colorChange(index) {
-            setTimeout(() => {
-                letters[index].style.color = 'purple';
-                letters[index].style.textShadow = '0 0 20px red'; // Change glow color
-                letters[index].style.webkitTextStroke = '0 0 10px black'
-            }, index * 100);
-
-            setTimeout(() => {
-                letters[index].style.color = '#0037ff';
-                letters[index].style.textShadow = '0 0 20px cyan'; // Reset glow color
-            }, (index + letters.length) * 100);
-            
-        }
-
-        function loopAnimation() {
-            for (let i = 0; i < letters.length; i++) {
-                colorChange(i);
-            }
-            setTimeout(loopAnimation, letters.length * 200); // Total time for one loop
-        }
-
-        loopAnimation();
-
-        const body = document.body;
-
-        body.addEventListener('mousemove', (e) => {
-            const mouseX = e.clientX / window.innerWidth - 0.5;
-            const mouseY = e.clientY / window.innerHeight - 0.5;
-
-            body.style.backgroundPosition = `${mouseX * 100}px ${mouseY * 100}px`;
-
-        });
-
-        const backgroundMusic = document.getElementById('backgroundMusic');
-        backgroundMusic.play();
-
-        function showNotification() {
-            const notification = document.createElement('div');
-            notification.classList.add('notification');
-            notification.textContent = 'Welcome My Bio!';
-
-            document.body.appendChild(notification);
-
-            setTimeout(() => {
-                notification.remove();
-            }, 5000); // Remove the notification after 5 seconds
-        }
-
-        showNotification();
     </script>
 
-
-</body></html>
+</body>
+</html>
